@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>تسجيل الدخول للمشروع</h1>
+    </header>
+
+    <nav>
+      <p><a href="index.html">الرئيسية</a></p>
+     <p> <a href="about.html">من نحن</a></p>
+        <p><a href="services.html">خدماتنا</a></P>
+       <p> <a href="register.html">إنشاء حساب</a></p>
+       <p> <a href="contact.html">تواصل معنا</a></p>
+        <p><a href="login.html">تسجيل الدخول</a></p>
+    </nav>
+
+    <main>
+        <section>
+            <div style="max-width: 400px; margin: auto; background: #e4e9ec; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                <h2 style="text-align: center;">مرحباً بعودتك</h2>
+                
+                <form id="loginForm" onsubmit="return validateLogin()">
+                    <label>البريد الإلكتروني:</label>
+                    <input type="email" id="loginEmail" placeholder="example@mail.com" required 
+                           style="width: 100%; padding: 10px; margin: 10px 0;">
+                    
+                    <label>كلمة المرور:</label>
+                    <input type="password" id="loginPass" placeholder="أدخل كلمة المرور" required 
+                           style="width: 100%; padding: 10px; margin: 10px 0;">
+                    
+                    <button type="submit" style="width: 100%; background-color: #1a6607; color: rgb(243, 248, 245); border: none; padding: 10px; cursor: pointer; border-radius: 5px;">
+                        دخول
+                    </button>
+                </form>
+                
+                <p style="margin-top: 15px; text-align: center;">
+                    ليس لديك حساب؟ <a href="register.html">سجل الآن</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026</p>
+    </footer>
+
+    <script>
+        function validateLogin() {
+            const email = document.getElementById('loginEmail').value;
+            const pass = document.getElementById('loginPass').value;
+            if (pass.length < 8) {
+                alert("خطأ: كلمة المرور يجب أن لا تقل عن 8 رموز");
+                return false;
+            }
+            
+            alert("مرحباً بك! جاري تسجيل الدخول...");
+            return true;
+        }
+    </script>
+</body>
+</html>

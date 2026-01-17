@@ -1,0 +1,57 @@
+<section class="about-section">
+    <div class="about-header">
+        <h1>من نحن</h1>
+        <p>نحن فريق متخصص في تطوير واجهات المستخدم، نسعى لتقديم أفضل الحلول الرقمية.</p>
+    </div>
+
+    <div class="team-container">
+        <div class="team-card">
+            <div class="member-icon">👤</div>
+            <h3>يوسف عاطف</h3>
+            <p class="role">مصمم واجهات</p>
+        </div>
+
+        <div class="team-card">
+            <div class="member-icon">💻</div>
+            <h3>يونس الوافي</h3>
+            <p class="role">مبرمج ويب</p>
+        </div>
+    </div>
+</section>
+
+Css
+
+/* تنسيق القسم الرئيسي */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f5ff; /* نفس لون الخلفية في صورتك الأولى */
+}
+
+.about-header h1 {
+    color: #003d80; /* لون الهيدر الغامق */
+    margin-bottom: 10px;
+}
+
+/* حاوية الفريق باستخدام Flexbox */
+
+
+.team-card:hover {
+    transform: translateY(-10px); /* حركة خفيفة عند المرور بالماوس */
+}
+
+.member-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.role {
+    color: #666;
+    font-weight: bold;
+    font-size: 0.9em;
+}
